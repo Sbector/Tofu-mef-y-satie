@@ -7,7 +7,14 @@
 
 	<title>tofu, mef y satie</title>
   
-  <script src="script.js"></script>
+  <script>
+	$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+	
+  </script>
   
 
 	<style>
@@ -21,6 +28,6 @@
 		}
 	</style>
 </head>
-<body>
-	<iframe id="video" src="https://www.youtube.com/embed/GOMOx8t8QcE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+<iframe id="video" src="https://www.youtube.com/embed/GOMOx8t8QcE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+<body>	
 </body>
